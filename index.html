@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalcularNumeros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <body>
+        <Section>
+        <div class="container">
+            <form name="calcform" method="post" action="">
+                <p><strong>Calculando Números </strong> </p>
+                Digite o primeiro valor :
+                <input type="text" name="valor1" id="valor1" />
+                <br>
+                Digite o segundo valor:
+                <input type="text" name="valor2" id="valor2" />
+                <br>
+                <label for="oper">Selecione a operação:</label>
+                <select name="oper" id="oper">
+                    <option value="somar">Somar</option>
+                    <option value="subtrair">Subtrair</option>
+                    <option value="multiplicar">Multiplifcar</option>
+                    <option value="dividir">Dividir</option>
+                </select> <Br>
+                <p> <input type="button" value="Calcular" class="botao"
+                     onClick="calcular(document.calcform.oper.value)" /> </p>
+                <p> <label for="res">Resultado:</label>
+                    <input type="text" name="res" id="res" /> </p>
+            </form>
+        </div>
+</Section>
+
+<script src="operador.js"></script>
+</body>
+
+</html>
